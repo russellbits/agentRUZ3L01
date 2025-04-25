@@ -8,7 +8,7 @@ import "dotenv/config";
 const client = new MongoClient(process.env.MONGODB_ATLAS_URI as string);
 
 const llm = new ChatOpenAI({
-  modelName: "gpt-4o-mini"
+  modelName: "gpt-3.5-turbo"
 });
 
 const EmployeeSchema = z.object({
